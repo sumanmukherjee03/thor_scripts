@@ -8,7 +8,7 @@ class Generategitignore < Thor::Group
   end
   
   def create_gitignore_file
-    template('/home/suman/My_tryouts/independent ruby scripts/templates/gitignore.tt', ".gitignore")
+    template("#{Generategitignore.source_root}/../Templates/gitignore.tt", ".gitignore")
   end
   
 end
